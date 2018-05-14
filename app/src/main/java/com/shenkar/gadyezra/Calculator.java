@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Calculator extends AppCompatActivity {
     TextView result;
     EditText Number1;
     EditText Number2;
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_calculator);
         result = (TextView) findViewById(R.id.result);
         Number1 = (EditText) findViewById(R.id.Number1);
         Number2 = (EditText) findViewById(R.id.Number2);

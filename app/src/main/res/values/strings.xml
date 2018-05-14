@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Gady Calculator</string>
+    <string name="app_name">Gady Ezra</string>
+    <string name="calculator">Calculator</string>
+    <string name="birthday">Birthday</string>
 </resources>
