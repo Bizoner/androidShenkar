@@ -16,4 +16,8 @@ public class MainMenu extends AppCompatActivity {
     public void onCalcClick(View view) {
         startActivity(new Intent(this, Calculator.class));
     }
+
+    public void onBirthdayClick(View view) {
+        startActivity(new Intent(this, Birthday.class));
+    }
 }

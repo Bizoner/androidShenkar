@@ -33,6 +33,7 @@
         android:layout_marginRight="146dp"
         android:layout_marginStart="147dp"
         android:text="@string/birthday"
+        android:onClick="onBirthdayClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

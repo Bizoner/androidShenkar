@@ -2,4 +2,7 @@
     <string name="app_name">Gady Ezra</string>
     <string name="calculator">Calculator</string>
     <string name="birthday">Birthday</string>
+    <string name="birthdayTitle">Birthday List</string>
+    <string name="pick_date">1/1/1970</string>
+    <string name="birthdayAdd">ADD</string>
 </resources>
