@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Calculator" />
-        <activity android:name=".Birthday"></activity>
+        <activity android:name=".Birthday" />
+        <activity android:name=".animation.LowLevelGraphic"></activity>
     </application>
 
 </manifest>

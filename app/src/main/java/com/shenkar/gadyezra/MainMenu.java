@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.shenkar.gadyezra.animation.LowLevelGraphic;
+
 public class MainMenu extends AppCompatActivity {
 
     @Override
@@ -19,5 +21,9 @@ public class MainMenu extends AppCompatActivity {
 
     public void onBirthdayClick(View view) {
         startActivity(new Intent(this, Birthday.class));
+    }
+
+    public void onAnimationClick(View view) {
+        startActivity(new Intent(this, LowLevelGraphic.class));
     }
 }

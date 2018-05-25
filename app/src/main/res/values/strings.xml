@@ -5,4 +5,5 @@
     <string name="birthdayTitle">Birthday List</string>
     <string name="pick_date">Pick Date</string>
     <string name="birthdayAdd">ADD</string>
+    <string name="animation">Animation</string>
 </resources>
