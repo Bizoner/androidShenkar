@@ -10,6 +10,7 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,6 +76,10 @@ public class LowLevelView extends View implements View.OnClickListener {
         Random random = new Random();
         int mPivotX = random.nextInt(maxX - minX + 1) + minX;
         int mPivotY = random.nextInt(maxY - minY + 1) + minY;
+        while (mPivotX > left && mPivotX < right && mPivotY > top && mPivotY < bottom) {
+            mPivotX = random.nextInt(maxX - minX + 1) + minX;
+            mPivotY = random.nextInt(maxY - minY + 1) + minY;
+        }
         Paint ballPaint = new Paint();
         ballPaint.setColor(Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256)));
         mBalls.add(new Ball(mPivotX,mPivotY,ballPaint));
@@ -82,8 +87,8 @@ public class LowLevelView extends View implements View.OnClickListener {
 
     public void startAnimation() {
 
-        ValueAnimator animator = ValueAnimator.ofInt(0, 100);
-        animator.setDuration(10000);
+        ValueAnimator animator = ValueAnimator.ofInt(10, 10);
+        animator.setDuration(100);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
@@ -121,6 +126,7 @@ public class LowLevelView extends View implements View.OnClickListener {
                 invalidate();
             }
         });
+        animator.setRepeatCount(Animation.INFINITE);
         animator.start();
 
     }
