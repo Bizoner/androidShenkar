@@ -76,7 +76,7 @@ public class LowLevelView extends View implements View.OnClickListener {
         int mPivotX = random.nextInt(maxX - minX + 1) + minX;
         int mPivotY = random.nextInt(maxY - minY + 1) + minY;
         Paint ballPaint = new Paint();
-        ballPaint.setColor(Color.RED);
+        ballPaint.setColor(Color.argb(255, random.nextInt(256), random.nextInt(256), random.nextInt(256)));
         mBalls.add(new Ball(mPivotX,mPivotY,ballPaint));
     }
 
